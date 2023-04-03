@@ -19,12 +19,12 @@ input_image = Image.open(input_image_file)
 width, height = input_image.size
 
 # Calculate the width and height of each smaller image
-small_width = width // 3
-small_height = height // 4
+small_width = width // 2
+small_height = height // 2
 
 # Iterate through the rows and columns
-for row in range(4):
-    for col in range(3):
+for row in range(2):
+    for col in range(2):
         # Calculate the coordinates of the current small image
         left = col * small_width
         top = row * small_height
